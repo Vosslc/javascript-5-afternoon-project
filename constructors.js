@@ -15,6 +15,7 @@
 */
 
 // Code here
+function CarFactory()
 
 ////////// PROBLEM 2 //////////
 
