@@ -15,7 +15,10 @@
 */
 
 // Code here
-function CarFactory()
+function CarFactory(make, model) {
+  this.make = make;
+  this.model = model;
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -27,13 +30,15 @@ function Employee(name, email, hireDate) {
   this.hireDate = hireDate;
 }
 
+
 // Do not edit the code above.
 
 /*
-  Invoke the constructor function above and pass in 'Bob', 'bob@gmail.com', and '01-02-98' as arguments.
-  Assign the result of the invocation to a variable called bob.
+Invoke the constructor function above and pass in 'Bob', 'bob@gmail.com', and '01-02-98' as arguments.
+Assign the result of the invocation to a variable called bob.
 */
 
+let bob = new Employee("Bob", 'bob@gmail.com', '01-02-98')
 // Code here
 
 ////////// PROBLEM 3 //////////
@@ -57,7 +62,20 @@ mustang.moveCar(); // Increments mustang' move property by 10. Returns the new m
     invoking moveCar on the right object (prius vs mustang).
 */
 
-// Code here
+function Car(make, modle, year) {
+  this.move = 0
+  this.make = make;
+  this.modle = modle;
+  this.year = year;
+  this.moveCar = function (){
+    this.move += 10
+    return this.move
+  }
+
+    
+
+  
+}
 
 ////////// PROBLEM 4 //////////
 
